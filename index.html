@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Digital Tasbih</title>
+  </head>
+  <body>
+    <header class="mt-8 text-center">
+        <h1 class="font-bold text-6xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text p-3 ">Digital Tasbih</h1>
+    </header>
+    <main class="container mx-auto mt-16">
+        <div class="flex gap-2 flex-col lg:flex-row align-middlel justify-center">
+            <div class="shadow-lg text-center lg:py-10 lg:px-20 rounded-md m-3">
+                <h2 class="font-semibold text-3xl pt-3">Subhan Allah</h2>
+                <p id="subahanAllahDisplay" class="font-semibold text-3xl p-3">0</p>
+                <div class="flex gap-3 justify-center pb-2">
+                    <button id="subahanAllahIncriminate" class="font-semibold text-xl text-white bg-green-500 rounded-md p-3">Incriminate</button>
+                    <button id="subahanAllahDecriminate" class="font-semibold text-xl text-white bg-red-500 rounded-md p-3">Decrement</button>
+                </div>
+            </div>
+            <div class="shadow-lg text-center lg:py-10 lg:px-20 rounded-md m-3">
+                <h2 class="font-semibold text-3xl pt-3">Alhamdulillah</h2>
+                <p id="alhamdulillahDisplay" class="font-semibold text-3xl p-3">0</p>
+                <div class="flex gap-3 justify-center pb-2">
+                    <button id="alhamdulillahIncriminate" class="font-semibold text-xl text-white bg-green-500 rounded-md p-3">Incriminate</button>
+                    <button id="alhamdulillahDecriminate" class="font-semibold text-xl text-white bg-red-500 rounded-md p-3">Decrement</button>
+                </div>
+            </div>
+            <div class="shadow-lg text-center lg:py-10 lg:px-20 rounded-md m-3">
+                <h2 class="font-semibold text-3xl pt-3">Allahuakbar</h2>
+                <p id="allahuakbarDisplay" class="font-semibold text-3xl p-3">0</p>
+                <div class="flex gap-3 justify-center pb-2">
+                    <button id="allahuakbarIncriminate" class="font-semibold text-xl text-white bg-green-500 rounded-md p-3">Incriminate</button>
+                    <button id="allahuakbarDecriminate" class="font-semibold text-xl text-white bg-red-500 rounded-md p-3">Decrement</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button id="resetBtn" class="font-semibold text-xl text-white bg-blue-500 rounded-md py-3 px-6">Reset</button>
+        </div>
+    </main>
+
+    <script src="javascripts/tasbih.js"></script>
+  </body>
+</html>
